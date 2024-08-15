@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100 text-gray-900">
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+        <div class="text-center text-white bg-black bg-opacity-50 p-10 rounded-lg">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Your Health & Fitness Guide</h1>
+            <p class="text-xl mb-6">Empower your journey towards a healthier lifestyle.</p>
+            <a href="#health-parameters" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="bg bg-green-600 sticky top-0 z-50">
+
+        <ul class="flex justify-center space-x-4 text-5xl py-4 font-bold mb-3">
+            <li><a href="#health-parameters" class="text-white py-4 px-6 hover:bg-green-400">Health Parameters</a></li>
+            <li><a href="#fitness-tips" class="text-white py-4 px-6 hover:bg-green-400">Fitness Tips</a></li>
+            <li><a href="#nutrition" class="text-white py-4 px-6 hover:bg-green-400">Nutrition</a></li>
+            <li><a href="#More" class="text-white py-4 px-6 hover:bg-green-400">More</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-6">
+
+        <!-- Health Parameters Section -->
+        <section id="health-parameters" class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <div class="flex items-center space-x-4 object-scale-down h-48 w-96 ..." >
+                    <img src="https://t3.ftcdn.net/jpg/03/00/65/82/360_F_300658258_ZONuYpgnH0tSlPHB9lxES1Ai7Ij0ZNSz.jpg" alt="Health Parameters Icon" class="w-1/0.5 h-1/2">
+                    <h2 class="text-2xl font-semibold text-green-600">Health Parameters</h2>
+                </div>
+                <button class="mt-4 px-6 py-3 text-lg  bg-green-500 text-white rounded shadow-lg hover:bg-green-700" onclick="toggleSection('health-content')">let start ></button>
+                <div id="health-content" class="space-y-2 mt-4 hidden">
+                    <p>Understanding your body's key health parameters is crucial to maintaining a healthy lifestyle. Here are some important parameters to monitor:</p>
+                    <ul class="list-disc list-inside">
+                        <li><strong>Body Mass Index (BMI):</strong> A measure of body fat based on height and weight.</li>
+                        <li><strong>Blood Pressure:</strong> The force of blood against your artery walls as it circulates through your body.</li>
+                        <li><strong>Heart Rate:</strong> The number of times your heart beats per minute, indicating cardiovascular health.</li>
+                        <li><strong>Cholesterol Levels:</strong> The amount of cholesterol in your blood, affecting heart health.</li>
+                        <li><strong>Blood Sugar Levels:</strong> The amount of glucose in your blood, important for diabetes management.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fitness Tips Section -->
+        <section id="fitness-tips" class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow" >
+                <div class="flex items-center space-x-4">
+                    <img src="https://img.icons8.com/color/48/000000/dumbbell.png" alt="Fitness Tips Icon"   class="w-23 h-24">
+                    <h2 class="text-2xl font-semibold text-green-600">Fitness Tips</h2>
+                </div>
+                <button class="mt-4 px-6 py-3 text-lg  bg-green-500 text-white rounded shadow-lg hover:bg-green-700" onclick="toggleSection('fitness-content')">let start ></button>
+                <div id="fitness-content" class="space-y-2 mt-4 hidden">
+                    <p>Maintaining a regular fitness routine is essential for overall health. Here are some tips to keep you on track:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Set realistic goals and track your progress.</li>
+                        <li>Incorporate both cardio and strength training into your routine.</li>
+                        <li>Stay consistent and make exercise a part of your daily schedule.</li>
+                        <li>Mix up your workouts to keep things interesting and challenging.</li>
+                        <li>Listen to your body and allow time for recovery.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section id="nutrition">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <div class="flex items-center space-x-4">
+                    <img src="https://img.icons8.com/color/48/000000/apple.png" alt="Nutrition Icon" class="w-23 h-24">
+                    <h2 class="text-2xl font-semibold text-green-600">Nutrition</h2>
+                </div>
+                <button class="mt-4 px-6 py-3 text-lg  bg-green-500 text-white rounded shadow-lg hover:bg-green-700" onclick="toggleSection('nutrition-content')">let start ></button>
+                <div id="nutrition-content" class="space-y-2 mt-4 hidden">
+                    <p>Nutrition plays a critical role in your overall health and fitness. Focus on these key areas:</p>
+                    <ul class="list-disc list-inside">
+                        <li><strong>Balanced Diet:</strong> Ensure your diet includes a variety of foods from all food groups.</li>
+                        <li><strong>Hydration:</strong> Drink plenty of water throughout the day to stay hydrated.</li>
+                        <li><strong>Portion Control:</strong> Be mindful of portion sizes to avoid overeating.</li>
+                        <li><strong>Limit Processed Foods:</strong> Choose whole, unprocessed foods whenever possible.</li>
+                        <li><strong>Regular Meals:</strong> Eat regular meals to maintain energy levels and avoid unhealthy snacking.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="my-12">
+            <h2 class="text-3xl font-semibold text-center text-green-600 mb-8">What Our Users Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                    <p class="italic">"This guide has completely transformed my health journey! I've never felt better."</p>
+                    <p class="mt-4 text-right font-semibold">- Akshit</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                    <p class="italic">"The fitness tips are practical and easy to follow."</p>
+                    <p class="mt-4 text-right font-semibold">- Akash</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                    <p class="italic">"I love these tips"</p>
+                    <p class="mt-4 text-right font-semibold">- Vineet</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn More Modal Trigger -->
+        <button onclick="openModal()" class="mt-8 bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg">Learn More</button>
+
+        <!-- Modal -->
+        <div id="myModal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+            <div class="flex items-center justify-center min-h-screen">
+                <div class="bg-white rounded-lg shadow-lg p-6 w-3/4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-xl font-bold">More About Health</h2>
+                        <button onclick="closeModal()" class="text-gray-500">&times;</button>
+                    </div>
+                    <p class="mt-4">Detailed information about health parameters, fitness, and nutrition can help you make informed decisions about your well-being. Explore more on our website to learn about personalized plans, expert advice, and tools to track your progress.</p>
+                    <button onclick="closeModal()" class="mt-4 bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded-full shadow-lg">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" class="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white p-3 rounded-full hidden shadow-lg">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-semibold">About Us</h3>
+                    <p class="mt-4">We are dedicated to helping you achieve a healthier lifestyle through reliable health and fitness information.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Quick Links</h3>
+                    <ul class="mt-4">
+                        <li><a href="#health-parameters" class="hover:underline">Health Parameters</a></li>
+                        <li><a href="#fitness-tips" class="hover:underline">Fitness Tips</a></li>
+                        <li><a href="#nutrition" class="hover:underline">Nutrition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Follow Us</h3>
+                    <ul class="mt-4 flex space-x-4" >
+                        <li><a href="#" class="hover:text-green-500"><img src="https://t4.ftcdn.net/jpg/05/32/20/03/360_F_532200355_odKN9Ou3WB6iHWJTFIElFtJbTuzJspY6.jpg" alt="Facebook" class="w-1/2 h-1/0.5"> </a></li>
+                        <li><a href="#" class="hover:text-green-500"><img src="https://t3.ftcdn.net/jpg/06/29/22/40/360_F_629224066_zdnJIKaJHiMkP6EOIoh6hvUxcnFpsbE1.jpg" alt="Twitter" class="w-1/2 h-1/0.5"></a></li>
+                        <li><a href="#" class="hover:text-green-500"><img src="https://t4.ftcdn.net/jpg/05/32/20/03/360_F_532200382_KL6CDaZcusiZO9nO5TD7hWQEz8Ko6BZB.jpg" alt="Instagram" class="w-1/2 h-1/0.5"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-8">&copy; 2024 Health and Fitness Guide.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+
+        function openModal() {
+            document.getElementById("myModal").classList.remove("hidden");
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").classList.add("hidden");
+        }
+
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.classList.remove("hidden");
+            } else {
+                btn.classList.add("hidden");
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
